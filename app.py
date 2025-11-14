@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Page config
-st.set_page_config(page_title="Angu-Lator", page_icon="📐", layout="centered")
+st.set_page_config(page_title="Angu-Lator", page_icon="📐", layout="wide")
 
 # Initialize session state
 if "score" not in st.session_state:
@@ -167,3 +167,4 @@ if st.button("Reset Assessment (clear score and answers)"):
     st.session_state.score = 0
     st.session_state.answered = {}
     st.experimental_rerun()
+
